@@ -5,6 +5,7 @@ const path = require('path')
 const webpackNodeExternals = require('webpack-node-externals')
 
 const config = {
+    mode:'development',
     target:'node',
     entry:'./src/index.js',
     output:{
