@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev:build-erver": "webpack --config webpack.server.js --watch",
-    "dev:server":"nodemon --watch build --exec \"node build/bundle.js\"",
-    "dev:build-client":"webpack --config webpack.client.js --watch",
-    "dev":"npm-run-all --parallel dev:*"
+    "dev:server": "nodemon --watch build --exec \"node build/bundle.js\"",
+    "dev:build-client": "webpack --config webpack.client.js --watch",
+    "dev": "npm-run-all --parallel dev:*"
   },
   "author": "",
   "license": "ISC",
@@ -47,6 +47,7 @@
     "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
     "webpack": "^4.43.0"
   }
 }
