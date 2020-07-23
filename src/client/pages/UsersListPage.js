@@ -43,5 +43,7 @@ const loadData = (store) => {
 }
 
 
-export default connect(mapStateToProps,mapDispatchToProps)(UsersList)
-export {loadData}
+export default {
+    component:connect(mapStateToProps,mapDispatchToProps)(UsersList),
+loadData:loadData
+}
