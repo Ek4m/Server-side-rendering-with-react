@@ -7,8 +7,11 @@ import reducers from '../client/reducers/index'
 export default (req) => {
     const axiosInstance = axios.create({
         baseURL:'http://react-ssr-api.herokuapp.com',
-        headers:{cookie:req.get('cookie') || ''}
+        headers:{
+            cookie:req.get('cookie') || ''
+        }
     })
+
     const store = createStore(reducers,{},applyMiddleware(thunk.withExtraArgument(axiosInstance)))
     return store
 }

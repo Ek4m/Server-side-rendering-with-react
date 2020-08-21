@@ -202,7 +202,7 @@ eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function () {\n    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n    var action = arguments[1];\n\n    switch (action.type) {\n        case _index.FETCH_ADMINS:\n            return action.payload.data;\n        default:\n            return state;\n    }\n};\n\nvar _index = __webpack_require__(/*! ../actions/index */ \"./src/client/actions/index.js\");\n\n//# sourceURL=webpack:///./src/client/reducers/adminsReducer.js?");
+eval("\n\nObject.defineProperty(exports, \"__esModule\", {\n    value: true\n});\n\nexports.default = function () {\n    var state = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];\n    var action = arguments[1];\n\n    switch (action.type) {\n        case \"FETCH_ADMINS\":\n            return action.payload.data;\n        default:\n            return state;\n    }\n};\n\n//# sourceURL=webpack:///./src/client/reducers/adminsReducer.js?");
 
 /***/ }),
 
